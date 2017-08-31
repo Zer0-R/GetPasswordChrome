@@ -14,7 +14,7 @@ except:
 
 
 # waiting time to verify internet connection
-DELAY_SLEEP = 10
+DELAY_SLEEP = 60
 
 # ftp server address
 HOST_FTP = "ftp.yourHost.com"
