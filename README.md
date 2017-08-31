@@ -26,5 +26,5 @@ http://192.168.0.254/ (freebox,Not found)
 https://login.uptobox.com/ (email@gmail.com,*****)
 https://github.com/Zer0-R/Keylogger/settings/delete (email@gmail.com,*****)
 
-Zer0GetPasswordChrome done: 7 urls (8 passwords found) found
+Zer0GetPasswordChrome done: 7 urls (6 passwords found) found
 ```
